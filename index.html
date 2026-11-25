@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea De Vita – Front-end Dev & Web Designer | IT Support & Help
+        Desk Specialist</title>
+    <meta name="description"
+        content="Portfolio di Andrea De Vita, sviluppatore front-end. Progetti web moderni, responsive e ottimizzati, realizzati con HTML, CSS e JavaScript.">
+    <meta name="keywords"
+        content="front-end developer, web developer, portfolio, HTML, CSS, JavaScript, responsive design, UI/UX">
+    <meta name="author" content="Andrea De Vita">
+    <meta property="og:title" content="Andrea De Vita – Front-End Developer">
+    <meta property="og:description"
+        content="Scopri i miei progetti web: da app per droni a startpage minimali.">
+    <meta property="og:type" content="website">
+    <meta property="og:url"
+        content="https://andreadevita99.github.io/portfolio/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Reset e variabili */
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+            --radius: 12px;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header / Hero */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 80px 0 60px;
+        }
+
+        .hero-content {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(1.35rem, 4.3vw, 3.3rem);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .hero h1 .hero-line {
+            display: block;
+            white-space: nowrap;
+        }
+
+        .hero h1 .accent {
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: clamp(0.72rem, 1.85vw, 1.2rem);
+            color: var(--text-light);
+            max-width: none;
+            width: 100%;
+            white-space: nowrap;
+            margin: 0 auto 32px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: var(--primary-dark);
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--primary);
+            color: white;
+            padding: 14px 28px;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Sezione Progetti */
+        .section-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            padding-bottom: 80px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.25s, box-shadow 0.25s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .project-icon {
+            font-size: 2.5rem;
+            padding: 24px 24px 0;
+            line-height: 1;
+        }
+
+        .project-info {
+            padding: 20px 24px 24px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .project-info h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .project-info p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+
+        .project-link svg {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.2s;
+        }
+
+        .project-link:hover svg {
+            transform: translateX(4px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 32px 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero {
+                min-height: 70vh;
+                padding: 60px 0 40px;
+            }
+
+            .hero p {
+                font-size: clamp(0.66rem, 2.35vw, 0.95rem);
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Accessibilità: focus visibile */
+        a:focus-visible,
+        .btn:focus-visible {
+            outline: 3px solid var(--primary);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">🚀 Front-end Dev & Web Designer | IT Support
+                    & Help Desk Specialist</span>
+                <h1>
+                    <span class="hero-line">👋 Ciao, sono <span
+                            class="accent">Andrea De Vita</span></span>
+                    <span class="hero-line">Web developer e consulente
+                        IT:</span>
+                </h1>
+                <p>sviluppo siti web su misura e offro assistenza tecnica IT
+                    per aziende e professionisti.</p>
+                <a href="#projects" class="btn">
+                    Visualizza i miei Progetti
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <polyline points="5 12 12 19 19 12"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sezione Progetti -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>I Miei Progetti</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- AVIS Card -->
+                <article class="project-card">
+                    <div class="project-icon">🩸</div>
+                    <div class="project-info">
+                        <h3>AVIS Card</h3>
+                        <p>Versione digitalizzata della tessera del socio
+                            donatore dell'AVIS Comunale di Tradate. Un'app per
+                            gestire i dati personali e le donazioni.
+                        </p>
+                        <a href="https://andreadevita99.github.io/AVIS-Card/"
+                            target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            Visualizza
+                            <svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                </path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- DroneHubLog -->
+                <article class="project-card">
+                    <div class="project-icon">🚁</div>
+                    <div class="project-info">
+                        <h3>DroneHubLog</h3>
+                        <p>Web app per piloti e operatori di droni. Registro
+                            voli, gestione flotta DJI, batterie e manutenzione,
+                            conforme alle normative EASA/ENAC.</p>
+                        <a href="https://andreadevita99.github.io/DroneHub/"
+                            target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            Visualizza
+                            <svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                </path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Brave's Terminal-inspired Startpage -->
+                <article class="project-card">
+                    <div class="project-icon">🏡</div>
+                    <div class="project-info">
+                        <h3>Brave's Terminal-inspired Startpage</h3>
+                        <p>Una startpage minimalista per Brave, ispirata al
+                            terminale. Un'interfaccia pulita e funzionale per
+                            iniziare la giornata.</p>
+                        <a href="https://andreadevita99.github.io/startpage/"
+                            target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            Visualizza
+                            <svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                </path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Australian To-Do List -->
+                <article class="project-card">
+                    <div class="project-icon">🇦🇺</div>
+                    <div class="project-info">
+                        <h3>Australian To-Do List</h3>
+                        <p>Una to-do list web app pulita ed essenziale, con un
+                            tocco australiano. Perfetta per organizzare le
+                            attività quotidiane.</p>
+                        <a href="https://andreadevita99.github.io/Australian-To-Do-List/"
+                            target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            Visualizza
+                            <svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                </path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Clipt -->
+                <article class="project-card">
+                    <div class="project-icon">🌴</div>
+                    <div class="project-info">
+                        <h3>Clipt</h3>
+                        <p>Un template "link-in-bio" ispirato a Linktree. Un
+                            modo semplice e elegante per raggruppare tutti i
+                            tuoi link importanti.</p>
+                        <a href="https://andreadevita99.github.io/Clipt/"
+                            target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            Visualizza
+                            <svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                </path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Rickroll -->
+                <article class="project-card">
+                    <div class="project-icon">🤡</div>
+                    <div class="project-info">
+                        <h3>Rickroll</h3>
+                        <p>Un piccolo scherzo digitale. Un progetto leggero per
+                            dimostrare creatività e padronanza dei media web.
+                        </p>
+                        <a href="https://andreadevita99.github.io/rickroll/"
+                            target="_blank" rel="noopener noreferrer"
+                            class="project-link">
+                            Visualizza
+                            <svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                </path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Andrea De Vita. Costruito con
+                passione, HTML, CSS e JavaScript.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Anno dinamico nel footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
