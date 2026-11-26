@@ -82,7 +82,10 @@
 
         /* Header / Hero */
         .hero {
-            min-height: 80vh;
+            /* MODIFICATO: la hero occupa tutta l'altezza dello schermo,
+               così i progetti restano sotto la piega */
+            min-height: 100vh;
+            min-height: 100dvh;
             display: flex;
             align-items: center;
             text-align: center;
@@ -173,6 +176,11 @@
             margin: 0 auto;
         }
 
+        /* MODIFICATO: aggiunto un po' di respiro sopra la sezione progetti */
+        #projects {
+            padding-top: 40px;
+        }
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -254,7 +262,10 @@
         /* Responsive */
         @media (max-width: 600px) {
             .hero {
-                min-height: 70vh;
+                /* MODIFICATO: era 70vh, ora 100vh/100dvh
+                   per mantenere i progetti sotto la piega anche su mobile */
+                min-height: 100vh;
+                min-height: 100dvh;
                 padding: 60px 0 40px;
             }
 
