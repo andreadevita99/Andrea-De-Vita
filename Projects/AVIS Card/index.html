@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#0055A5">
     <meta name="color-scheme" content="light">
 
-    <!-- ═══════ SEO PRIMARY ═══════ -->
-    <title>Tessera Socio Donatore AVIS Tradate | Modulo Digitale</title>
-    <meta name="description" content="Compila, salva e stampa la tua tessera socio donatore AVIS Comunale di Tradate. Modulo digitale con salvataggio automatico, gestione donazioni e export PDF.">
-    <meta name="author" content="AVIS Comunale di Tradate">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <link rel="canonical" href="https://avis-tradate.it/tessera">
+    <!-- ═══════ SEO PRIMARY — CONCEPT/DEMO ═══════ -->
+    <title>AVIS Card – Concept UI | Tessera Donatore (Demo Portfolio)</title>
+    <meta name="description"
+        content="Concept UI di tessera donatore realizzato a scopo di portfolio. Progetto dimostrativo non ufficiale, non affiliato ad AVIS. Demo front-end con salvataggio locale, stampa e gestione donazioni.">
+    <meta name="author" content="Progetto portfolio – Concept UI">
+    <meta name="robots"
+        content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 
     <!-- ═══════ OPEN GRAPH ═══════ -->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="AVIS Comunale di Tradate">
-    <meta property="og:title" content="Tessera Socio Donatore AVIS Tradate">
-    <meta property="og:description" content="Compila, salva e stampa la tua tessera socio donatore AVIS Tradate.">
+    <meta property="og:site_name" content="Concept UI – Portfolio">
+    <meta property="og:title" content="AVIS Card – Concept UI (Demo Portfolio)">
+    <meta property="og:description"
+        content="Concept UI dimostrativo di tessera donatore. Progetto di portfolio non ufficiale, non affiliato ad AVIS.">
     <meta property="og:locale" content="it_IT">
-    <meta property="og:url" content="https://avis-tradate.it/tessera">
 
     <!-- ═══════ TWITTER CARD ═══════ -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Tessera Socio Donatore AVIS Tradate">
-    <meta name="twitter:description" content="Compila, salva e stampa la tua tessera socio donatore AVIS Tradate.">
+    <meta name="twitter:title"
+        content="AVIS Card – Concept UI (Demo Portfolio)">
+    <meta name="twitter:description"
+        content="Concept UI dimostrativo di tessera donatore. Progetto di portfolio non ufficiale.">
 
     <!-- ═══════ FAVICON (jsDelivr da GitHub) ═══════ -->
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/andreadevita99/AVIS-Card@main/favicon.png">
-    <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/andreadevita99/AVIS-Card@main/favicon.png">
+    <link rel="icon" type="image/png"
+        href="https://cdn.jsdelivr.net/gh/andreadevita99/AVIS-Card@main/favicon.png">
+    <link rel="apple-touch-icon"
+        href="https://cdn.jsdelivr.net/gh/andreadevita99/AVIS-Card@main/favicon.png">
 
     <!-- ═══════ PRECONNECT ═══════ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,54 +44,31 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
     <!-- ═══════ FONTS ═══════ -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <!-- ═══════ ICONS ═══════ -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- ═══════ TAILWIND ═══════ -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- ═══════ JSON-LD STRUCTURED DATA ═══════ -->
+    <!-- ═══════ JSON-LD STRUCTURED DATA — CONCEPT ═══════ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebApplication",
-          "@id": "https://avis-tradate.it/tessera#app",
-          "name": "Tessera Socio Donatore AVIS Tradate",
-          "description": "Modulo digitale per compilare, salvare e stampare la tessera socio donatore AVIS Tradate.",
-          "applicationCategory": "UtilityApplication",
-          "operatingSystem": "Any",
-          "inLanguage": "it-IT",
-          "isAccessibleForFree": true,
-          "browserRequirements": "Richiede JavaScript"
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://avis-tradate.it/#organization",
-          "name": "AVIS Comunale di Tradate",
-          "alternateName": "AVIS Tradate",
-          "url": "https://avis-tradate.it",
-          "telephone": "+39 0331 844112",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Via Angelo Zanaboni, 1",
-            "addressLocality": "Tradate",
-            "addressRegion": "VA",
-            "postalCode": "21049",
-            "addressCountry": "IT"
-          }
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://avis-tradate.it/" },
-            { "@type": "ListItem", "position": 2, "name": "Tessera Donatore", "item": "https://avis-tradate.it/tessera" }
-          ]
-        }
-      ]
+      "@type": "SoftwareApplication",
+      "name": "AVIS Card – Concept UI",
+      "description": "Concept UI dimostrativo di tessera donatore, realizzato a scopo di portfolio. Non è un sito ufficiale AVIS e non è affiliato all'Associazione.",
+      "applicationCategory": "DesignConcept",
+      "operatingSystem": "Any",
+      "inLanguage": "it-IT",
+      "isAccessibleForFree": true,
+      "browserRequirements": "Richiede JavaScript",
+      "disambiguatingDescription": "Progetto dimostrativo non ufficiale, realizzato a scopo di portfolio. Nessuna affiliazione con AVIS o con l'AVIS Comunale di Tradate."
     }
     </script>
 
@@ -120,16 +104,31 @@
 
         .tessera-card {
             background-color: #fff;
-            box-shadow: 0 10px 25px -5px rgba(0,0,0,.08), 0 8px 10px -6px rgba(0,0,0,.08);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, .08), 0 8px 10px -6px rgba(0, 0, 0, .08);
             animation: fadeInUp .45s ease-out both;
         }
+
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(12px); }
-            to   { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         @media (prefers-reduced-motion: reduce) {
-            .tessera-card { animation: none; }
-            * { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+            .tessera-card {
+                animation: none;
+            }
+
+            * {
+                transition-duration: .01ms !important;
+                animation-duration: .01ms !important;
+            }
         }
 
         /* ═══════ INPUT STYLES ═══════ */
@@ -146,10 +145,12 @@
             border-radius: 0;
             min-height: 32px;
         }
+
         .input-line:focus {
             border-bottom-color: #0055A5;
-            background-color: rgba(0,85,165,.04);
+            background-color: rgba(0, 85, 165, .04);
         }
+
         .input-line:focus-visible {
             outline: 2px solid #0055A5;
             outline-offset: 2px;
@@ -164,9 +165,13 @@
             transition: background-color .15s, box-shadow .2s;
             overflow: hidden;
         }
-        .red-box:hover { background-color: #FFF8F8; }
+
+        .red-box:hover {
+            background-color: #FFF8F8;
+        }
+
         .red-box:focus-within {
-            box-shadow: 0 0 0 3px rgba(227,6,19,.15);
+            box-shadow: 0 0 0 3px rgba(227, 6, 19, .15);
             background-color: #fff;
         }
 
@@ -202,7 +207,10 @@
             padding-left: 2px;
             padding-right: 13px;
         }
-        .red-box select::-ms-expand { display: none; }
+
+        .red-box select::-ms-expand {
+            display: none;
+        }
 
         /* ═══════ BUTTONS ═══════ */
         .btn {
@@ -219,26 +227,67 @@
             cursor: pointer;
             border: none;
         }
-        .btn:active { transform: scale(.97); }
-        .btn:focus-visible { outline: 2px solid #0055A5; outline-offset: 2px; }
-        .btn-primary { background: #0055A5; color: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
-        .btn-primary:hover { background: #003B75; }
-        .btn-ghost { background: #f3f4f6; color: #374151; }
-        .btn-ghost:hover { background: #e5e7eb; }
-        .btn-danger { background: #fef2f2; color: #b91c1c; }
-        .btn-danger:hover { background: #fee2e2; }
+
+        .btn:active {
+            transform: scale(.97);
+        }
+
+        .btn:focus-visible {
+            outline: 2px solid #0055A5;
+            outline-offset: 2px;
+        }
+
+        .btn-primary {
+            background: #0055A5;
+            color: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .12);
+        }
+
+        .btn-primary:hover {
+            background: #003B75;
+        }
+
+        .btn-ghost {
+            background: #f3f4f6;
+            color: #374151;
+        }
+
+        .btn-ghost:hover {
+            background: #e5e7eb;
+        }
+
+        .btn-danger {
+            background: #fef2f2;
+            color: #b91c1c;
+        }
+
+        .btn-danger:hover {
+            background: #fee2e2;
+        }
 
         /* ═══════ DONATIONS TABLE — MOBILE CARD VIEW ═══════ */
-        #donations-table { width: 100%; border-collapse: collapse; }
+        #donations-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
         #donations-table th,
-        #donations-table td { vertical-align: middle; }
+        #donations-table td {
+            vertical-align: middle;
+        }
 
         @media (max-width: 639px) {
-            #donations-table thead { display: none; }
+            #donations-table thead {
+                display: none;
+            }
+
             #donations-table,
             #donations-table tbody,
             #donations-table tr,
-            #donations-table td { display: block; width: 100%; }
+            #donations-table td {
+                display: block;
+                width: 100%;
+            }
 
             #donations-table tr {
                 border: 1px solid #4b5563;
@@ -246,8 +295,9 @@
                 margin-bottom: .75rem;
                 padding: .6rem .75rem;
                 background: #f9fafb;
-                box-shadow: 0 1px 2px rgba(0,0,0,.04);
+                box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
             }
+
             #donations-table td {
                 border: none !important;
                 padding: .4rem .25rem;
@@ -256,6 +306,7 @@
                 align-items: center;
                 gap: .6rem;
             }
+
             #donations-table td::before {
                 content: attr(data-label);
                 font-weight: 700;
@@ -266,13 +317,17 @@
                 min-width: 72px;
                 flex-shrink: 0;
             }
+
             #donations-table td.no-print {
                 justify-content: flex-end;
                 border-top: 1px dashed #d1d5db !important;
                 margin-top: .35rem;
                 padding-top: .55rem;
             }
-            #donations-table td.no-print::before { display: none; }
+
+            #donations-table td.no-print::before {
+                display: none;
+            }
 
             #donations-table input[type="date"],
             #donations-table input[type="text"] {
@@ -286,6 +341,7 @@
             transition: opacity .25s ease, transform .25s ease;
             transform: translateY(8px);
         }
+
         #save-toast.show {
             opacity: 1;
             transform: translateY(0);
@@ -293,10 +349,23 @@
         }
 
         /* ═══════ SCROLLBAR ═══════ */
-        ::-webkit-scrollbar { width: 6px; height: 6px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
 
         /* ═══════ RISORSE / LINK UTILI ═══════ */
         .resource-card {
@@ -307,26 +376,62 @@
             background: #fff;
             border: 1px solid #e5e7eb;
             border-radius: .6rem;
-            box-shadow: 0 1px 2px rgba(0,0,0,.03);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .03);
             transition: border-color .15s, box-shadow .15s, transform .15s;
             text-decoration: none;
             color: inherit;
         }
+
         .resource-card:hover {
             border-color: #0055A5;
-            box-shadow: 0 4px 12px -4px rgba(0,85,165,.18);
+            box-shadow: 0 4px 12px -4px rgba(0, 85, 165, .18);
             transform: translateY(-1px);
         }
+
         .resource-card:focus-visible {
             outline: 2px solid #0055A5;
             outline-offset: 2px;
         }
+
         .resource-icon {
-            width: 38px; height: 38px;
+            width: 38px;
+            height: 38px;
             border-radius: .5rem;
-            display: flex; align-items: center; justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 1rem;
             flex-shrink: 0;
+        }
+
+        /* ═══════ DISCLAIMER / PRIVACY ═══════ */
+        .disclaimer-box {
+            background-color: #fffbeb;
+            border: 1px solid #fcd34d;
+            border-left: 4px solid #f59e0b;
+            border-radius: .5rem;
+        }
+
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details>summary::after {
+            content: "\f078";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            font-size: .65rem;
+            margin-left: .35rem;
+            display: inline-block;
+            transition: transform .2s;
+        }
+
+        details[open]>summary::after {
+            transform: rotate(180deg);
         }
 
         /* ═══════ PRINT ═══════ */
@@ -336,7 +441,11 @@
                 padding: 0;
                 margin: 0;
             }
-            .no-print { display: none !important; }
+
+            .no-print {
+                display: none !important;
+            }
+
             .tessera-card {
                 box-shadow: none;
                 margin: 0 auto;
@@ -345,57 +454,110 @@
                 max-width: 100% !important;
                 animation: none;
             }
-            .page-break { page-break-before: always; }
-            .input-line, .red-box input, .red-box select {
+
+            .page-break {
+                page-break-before: always;
+            }
+
+            .input-line,
+            .red-box input,
+            .red-box select {
                 background: transparent !important;
                 border-bottom-color: #000 !important;
                 background-image: none !important;
             }
+
             .red-box select {
                 padding-right: 4px;
                 padding-left: 4px;
             }
-            #donations-table thead { display: table-header-group; }
-            #donations-table tr { page-break-inside: avoid; }
-            a { text-decoration: none !important; color: inherit !important; }
+
+            #donations-table thead {
+                display: table-header-group;
+            }
+
+            #donations-table tr {
+                page-break-inside: avoid;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: inherit !important;
+            }
         }
 
         /* ═══════ UTILITIES ═══════ */
         .sr-only {
             position: absolute;
-            width: 1px; height: 1px;
-            padding: 0; margin: -1px;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
             overflow: hidden;
-            clip: rect(0,0,0,0);
+            clip: rect(0, 0, 0, 0);
             white-space: nowrap;
             border: 0;
         }
     </style>
 </head>
-<body class="min-h-screen py-4 px-3 sm:py-6 sm:px-6 md:py-10 flex flex-col items-center justify-start">
+
+<body
+    class="min-h-screen py-4 px-3 sm:py-6 sm:px-6 md:py-10 flex flex-col items-center justify-start">
+
+    <noscript>
+        <div
+            class="no-print w-full max-w-4xl mb-4 bg-red-50 border border-red-200 rounded-lg p-3 text-sm text-red-800">
+            <strong>JavaScript richiesto.</strong> Questo concept è una demo
+            interattiva e necessita di JavaScript per
+            funzionare. Senza JavaScript puoi comunque consultare il layout ma
+            non salvare né stampare.
+        </div>
+    </noscript>
+
+    <!-- ═══════════════════ BANNER CONCEPT (NON UFFICIALE) ═══════════════════ -->
+    <div class="no-print w-full max-w-4xl mb-3">
+        <div
+            class="bg-amber-100 border border-amber-300 rounded-lg px-3 py-2 text-[11px] sm:text-xs text-amber-900 font-semibold flex items-start sm:items-center gap-2">
+            <i class="fa-solid fa-circle-exclamation mt-0.5 sm:mt-0"
+                aria-hidden="true"></i>
+            <span><strong>Concept UI non ufficiale</strong> – progetto
+                dimostrativo di portfolio, non affiliato ad AVIS
+                né all'AVIS Comunale di Tradate.</span>
+        </div>
+    </div>
 
     <!-- ═══════════════════ TOP ACTION BAR ═══════════════════ -->
-    <header class="no-print w-full max-w-4xl mb-4 sm:mb-6 bg-white rounded-xl shadow-md p-3 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 border border-gray-200">
+    <header
+        class="no-print w-full max-w-4xl mb-4 sm:mb-6 bg-white rounded-xl shadow-md p-3 sm:p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 border border-gray-200">
         <div class="flex items-center gap-3 min-w-0">
-            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-avis-blue text-white flex items-center justify-center text-lg sm:text-xl font-bold flex-shrink-0" aria-hidden="true">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-avis-blue text-white flex items-center justify-center text-lg sm:text-xl font-bold flex-shrink-0"
+                aria-hidden="true">
                 <i class="fa-solid fa-id-card"></i>
             </div>
             <div class="min-w-0">
-                <h1 class="font-bold text-gray-800 text-sm sm:text-lg leading-tight">Tessera Donatore Digitale</h1>
-                <p class="text-[11px] sm:text-xs text-gray-500 leading-tight mt-0.5">
-                    AVIS Comunale di Tradate (VA)
+                <h1
+                    class="font-bold text-gray-800 text-sm sm:text-lg leading-tight">
+                    AVIS Card – Concept UI</h1>
+                <p
+                    class="text-[11px] sm:text-xs text-gray-500 leading-tight mt-0.5">
+                    Tessera Donatore · demo portfolio
                     <span class="hidden sm:inline"> · </span>
-                    <span class="text-green-700 font-semibold whitespace-nowrap">
-                        <i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>
-                        <span class="hidden xs:inline sm:inline">salvataggio automatico</span>
+                    <span
+                        class="text-green-700 font-semibold whitespace-nowrap">
+                        <i class="fa-solid fa-cloud-arrow-up"
+                            aria-hidden="true"></i>
+                        <span class="hidden xs:inline sm:inline">salvataggio
+                            locale</span>
                     </span>
                 </p>
             </div>
         </div>
 
-        <nav class="flex items-center gap-1.5 sm:gap-2 flex-wrap" aria-label="Azioni tessera">
+        <nav class="flex items-center gap-1.5 sm:gap-2 flex-wrap"
+            aria-label="Azioni tessera">
             <button type="button" id="btn-sample" class="btn btn-ghost">
-                <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                <i class="fa-solid fa-wand-magic-sparkles"
+                    aria-hidden="true"></i>
                 <span class="hidden sm:inline">Dati di Esempio</span>
                 <span class="sm:hidden">Esempio</span>
             </button>
@@ -413,139 +575,234 @@
 
     <!-- ═══════════════════ MAIN CARD ═══════════════════ -->
     <main class="w-full flex flex-col items-center">
-        <article class="tessera-card w-full max-w-3xl bg-white text-gray-900 rounded-lg p-4 sm:p-6 md:p-8 border border-gray-300 relative overflow-hidden" aria-labelledby="card-title">
+        <article
+            class="tessera-card w-full max-w-3xl bg-white text-gray-900 rounded-lg p-4 sm:p-6 md:p-8 border border-gray-300 relative overflow-hidden"
+            aria-labelledby="card-title">
+
+            <!-- Badge concept -->
+            <span
+                class="no-print absolute top-2 right-2 bg-amber-100 text-amber-800 text-[9px] font-bold px-2 py-0.5 rounded border border-amber-300 uppercase tracking-wide z-10">
+                Concept · Demo
+            </span>
 
             <!-- ───────── HEADER TESSERA ───────── -->
-            <header class="flex flex-col sm:flex-row justify-between items-start gap-3 sm:gap-4 mb-3 border-b-2 border-avis-blue pb-3">
+            <header
+                class="flex flex-col sm:flex-row justify-between items-start gap-3 sm:gap-4 mb-3 border-b-2 border-avis-blue pb-3">
                 <div class="flex-1 min-w-0">
-                    <div class="bg-avis-blue text-white px-3 py-1 font-extrabold text-[10px] sm:text-xs tracking-wider uppercase inline-block rounded transform -skew-x-6 mb-2 shadow-sm">
+                    <div
+                        class="bg-avis-blue text-white px-3 py-1 font-extrabold text-[10px] sm:text-xs tracking-wider uppercase inline-block rounded transform -skew-x-6 mb-2 shadow-sm">
                         ASSOCIAZIONE VOLONTARI ITALIANI SANGUE
                     </div>
                     <div class="flex items-center gap-2">
-                        <!-- LOGO SOSTITUITO CON L'IMMAGINE -->
-                        <img src="https://cdn.jsdelivr.net/gh/andreadevita99/AVIS-Card@main/AVIS-Logo.png" 
-                             alt="Logo AVIS" 
-                             class="h-10 sm:h-12 w-auto">
-                        <div class="border-l-2 border-avis-blue pl-2 leading-tight min-w-0">
-                            <div class="font-bold text-gray-800 text-xs sm:text-sm tracking-wide uppercase">Sede Nazionale</div>
-                            <div class="text-[9px] sm:text-[10px] text-gray-500 leading-tight">Ente Giuridico con L. del 20-2-50 N. 49</div>
-                            <div class="text-[9px] sm:text-[10px] text-gray-500 leading-tight">ONLUS - D.Lgs. 4/12/1997 n. 460</div>
-                            <div class="text-[8px] sm:text-[9px] text-gray-400 leading-tight">Organizzazione non lucrativa di utilità sociale</div>
+                        <img src="https://github.com/andreadevita99/Andrea-De-Vita/blob/main/Projects/AVIS%20Card/AVIS-Logo.png?raw=true"
+                            alt="Logo AVIS (concept dimostrativo)"
+                            class="h-10 sm:h-12 w-auto">
+                        <div
+                            class="border-l-2 border-avis-blue pl-2 leading-tight min-w-0">
+                            <div
+                                class="font-bold text-gray-800 text-xs sm:text-sm tracking-wide uppercase">
+                                Sede Nazionale</div>
+                            <div
+                                class="text-[9px] sm:text-[10px] text-gray-500 leading-tight">
+                                Ente Giuridico con L. del 20-2-50 N. 49</div>
+                            <div
+                                class="text-[9px] sm:text-[10px] text-gray-500 leading-tight">
+                                ONLUS - D.Lgs. 4/12/1997 n. 460</div>
+                            <div
+                                class="text-[8px] sm:text-[9px] text-gray-400 leading-tight">
+                                Organizzazione non lucrativa di utilità sociale
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <address class="not-italic text-right text-[10px] sm:text-xs leading-snug font-semibold text-gray-700 bg-blue-50/60 p-2 rounded border border-blue-100 w-full sm:w-auto sm:min-w-[210px]">
+                <address
+                    class="not-italic text-right text-[10px] sm:text-xs leading-snug font-semibold text-gray-700 bg-blue-50/60 p-2 rounded border border-blue-100 w-full sm:w-auto sm:min-w-[210px]">
                     <div class="text-avis-blue font-bold text-xs sm:text-sm">
-                        <a href="https://avistradate.it" target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-avis-darkblue transition-colors">
+                        <a href="https://avistradate.it" target="_blank"
+                            rel="noopener noreferrer"
+                            class="hover:underline hover:text-avis-darkblue transition-colors">
                             AVIS Comunale di Tradate
                         </a>
                     </div>
                     <div>Piazza XXIV Maggio</div>
                     <div>Via Angelo Zanaboni, 1</div>
                     <div>21049 Tradate (VA)</div>
-                    
-                    <div class="font-bold text-gray-800 mt-0.5 flex flex-col items-end gap-0.5">
+
+                    <div
+                        class="font-bold text-gray-800 mt-0.5 flex flex-col items-end gap-0.5">
                         <div>
-                            <i class="fa-solid fa-phone text-[9px] sm:text-[10px] text-avis-blue" aria-hidden="true"></i>
-                            <a href="tel:+390331844112" class="hover:text-avis-blue transition-colors">Tel. 0331 844112</a>
+                            <i class="fa-solid fa-phone text-[9px] sm:text-[10px] text-avis-blue"
+                                aria-hidden="true"></i>
+                            <a href="tel:+390331844112"
+                                class="hover:text-avis-blue transition-colors">Tel.
+                                0331 844112</a>
                         </div>
                         <div>
-                            <i class="fa-solid fa-globe text-[9px] sm:text-[10px] text-avis-blue" aria-hidden="true"></i>
-                            <a href="https://avistradate.it" target="_blank" rel="noopener noreferrer" class="hover:text-avis-blue transition-colors underline decoration-dotted decoration-gray-400 hover:decoration-avis-blue">avistradate.it</a>
+                            <i class="fa-solid fa-globe text-[9px] sm:text-[10px] text-avis-blue"
+                                aria-hidden="true"></i>
+                            <a href="https://avistradate.it" target="_blank"
+                                rel="noopener noreferrer"
+                                class="hover:text-avis-blue transition-colors underline decoration-dotted decoration-gray-400 hover:decoration-avis-blue">avistradate.it</a>
                         </div>
                     </div>
                 </address>
             </header>
 
             <!-- ───────── FOTO + TITOLO/NUMERO ───────── -->
-            <section class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-start mb-4" aria-label="Intestazione tessera">
+            <section
+                class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-start mb-4"
+                aria-label="Intestazione tessera">
 
                 <div class="sm:col-span-4 flex flex-col items-center">
-                    <label for="photo-input" class="w-32 h-40 sm:w-36 sm:h-44 border-2 border-dashed border-gray-400 rounded-md bg-gray-50 flex flex-col items-center justify-center relative overflow-hidden group cursor-pointer shadow-inner hover:border-avis-blue transition-colors focus-within:ring-2 focus-within:ring-avis-blue">
-                        <img id="photo-preview" class="w-full h-full object-cover hidden" alt="Foto del donatore">
-                        <div id="photo-placeholder" class="text-center p-3 pointer-events-none">
-                            <i class="fa-solid fa-user-circle text-gray-400 text-4xl mb-1 group-hover:text-avis-blue transition" aria-hidden="true"></i>
-                            <p class="text-xs font-bold text-gray-500 group-hover:text-avis-blue">Foto Donatore</p>
-                            <p class="text-[10px] text-gray-400 no-print mt-1">Clicca per caricare</p>
+                    <label for="photo-input"
+                        class="w-32 h-40 sm:w-36 sm:h-44 border-2 border-dashed border-gray-400 rounded-md bg-gray-50 flex flex-col items-center justify-center relative overflow-hidden group cursor-pointer shadow-inner hover:border-avis-blue transition-colors focus-within:ring-2 focus-within:ring-avis-blue">
+                        <img id="photo-preview"
+                            class="w-full h-full object-cover hidden"
+                            alt="Foto del donatore">
+                        <div id="photo-placeholder"
+                            class="text-center p-3 pointer-events-none">
+                            <i class="fa-solid fa-user-circle text-gray-400 text-4xl mb-1 group-hover:text-avis-blue transition"
+                                aria-hidden="true"></i>
+                            <p
+                                class="text-xs font-bold text-gray-500 group-hover:text-avis-blue">
+                                Foto Donatore</p>
+                            <p class="text-[10px] text-gray-400 no-print mt-1">
+                                Clicca per caricare</p>
                         </div>
-                        <input type="file" id="photo-input" accept="image/*" class="sr-only" aria-label="Carica foto del donatore" onchange="previewPhoto(event)">
+                        <input type="file" id="photo-input" accept="image/*"
+                            class="sr-only"
+                            aria-label="Carica foto del donatore">
                     </label>
                 </div>
 
-                <div class="sm:col-span-8 flex flex-col justify-between h-full pt-1">
+                <div
+                    class="sm:col-span-8 flex flex-col justify-between h-full pt-1">
                     <div>
                         <div class="flex items-center gap-2 mb-2">
-                            <label for="comunale-di" class="text-sm font-bold text-gray-700 whitespace-nowrap">AVIS Comunale di:</label>
-                            <input type="text" id="comunale-di" value="Tradate" class="input-line text-sm font-bold text-avis-blue">
+                            <label for="comunale-di"
+                                class="text-sm font-bold text-gray-700 whitespace-nowrap">AVIS
+                                Comunale di:</label>
+                            <input type="text" id="comunale-di" value="Tradate"
+                                class="input-line text-sm font-bold text-avis-blue">
                         </div>
 
                         <div class="flex items-center gap-2 mb-3">
-                            <label for="tessera-n" class="text-sm font-bold text-gray-700 whitespace-nowrap">Tessera N.</label>
-                            <input type="text" id="tessera-n" placeholder="00000" inputmode="numeric" autocomplete="off" class="input-line font-mono font-bold text-base text-gray-800">
+                            <label for="tessera-n"
+                                class="text-sm font-bold text-gray-700 whitespace-nowrap">Tessera
+                                N.</label>
+                            <input type="text" id="tessera-n"
+                                placeholder="00000" inputmode="numeric"
+                                autocomplete="off"
+                                class="input-line font-mono font-bold text-base text-gray-800">
                         </div>
 
                         <div class="text-center sm:text-left">
-                            <div id="card-title" class="text-xs font-bold text-avis-blue tracking-wide uppercase">di Socio Donatore</div>
-                            <div class="text-3xl sm:text-4xl font-black text-avis-red tracking-tight leading-none my-1" aria-hidden="true">EFFETTIVO</div>
+                            <div id="card-title"
+                                class="text-xs font-bold text-avis-blue tracking-wide uppercase">
+                                di Socio Donatore</div>
+                            <div class="text-3xl sm:text-4xl font-black text-avis-red tracking-tight leading-none my-1"
+                                aria-hidden="true">EFFETTIVO</div>
                         </div>
                     </div>
 
                     <div class="flex items-center gap-2 mt-3">
-                        <label for="rilasciata-il" class="text-xs font-semibold text-gray-600 whitespace-nowrap">rilasciata il</label>
-                        <input type="date" id="rilasciata-il" class="input-line text-xs font-semibold" aria-label="Data di rilascio tessera">
+                        <label for="rilasciata-il"
+                            class="text-xs font-semibold text-gray-600 whitespace-nowrap">rilasciata
+                            il</label>
+                        <input type="date" id="rilasciata-il"
+                            class="input-line text-xs font-semibold"
+                            aria-label="Data di rilascio tessera">
                     </div>
                 </div>
             </section>
 
             <!-- ───────── DATI PERSONALI ───────── -->
-            <section class="space-y-3 mb-6 bg-gray-50/70 p-3.5 rounded-lg border border-gray-200" aria-labelledby="h-dati-personali">
-                <h2 id="h-dati-personali" class="sr-only">Dati personali del donatore</h2>
+            <section
+                class="space-y-3 mb-6 bg-gray-50/70 p-3.5 rounded-lg border border-gray-200"
+                aria-labelledby="h-dati-personali">
+                <h2 id="h-dati-personali" class="sr-only">Dati personali del
+                    donatore</h2>
 
                 <div class="flex items-center gap-2">
-                    <label for="nome-cognome" class="text-sm font-bold text-gray-700 w-6 flex-shrink-0">a</label>
-                    <input type="text" id="nome-cognome" placeholder="NOME E COGNOME DEL SOCIO" autocomplete="name" class="input-line text-sm font-bold text-gray-900 tracking-wide uppercase" aria-label="Nome e cognome del socio">
+                    <label for="nome-cognome"
+                        class="text-sm font-bold text-gray-700 w-6 flex-shrink-0">a</label>
+                    <input type="text" id="nome-cognome"
+                        placeholder="NOME E COGNOME DEL SOCIO"
+                        autocomplete="name"
+                        class="input-line text-sm font-bold text-gray-900 tracking-wide uppercase"
+                        aria-label="Nome e cognome del socio">
                 </div>
 
-                <div class="flex items-center gap-1.5 w-full flex-wrap sm:flex-nowrap">
-                    <label for="luogo-nascita" class="text-xs font-bold text-gray-700 whitespace-nowrap">nato/a a</label>
-                    <input type="text" id="luogo-nascita" placeholder="Comune di nascita" autocomplete="address-level2" class="input-line text-xs flex-1 min-w-[110px]">
-                    <span class="text-xs font-bold text-gray-500" aria-hidden="true">(</span>
-                    <input type="text" id="prov-nascita" placeholder="PR" maxlength="2" autocomplete="address-level1" aria-label="Provincia di nascita" class="input-line text-xs uppercase text-center w-10 px-0">
-                    <span class="text-xs font-bold text-gray-500" aria-hidden="true">)</span>
-                    <label for="data-nascita" class="text-xs font-bold text-gray-700 whitespace-nowrap ml-1">il</label>
-                    <input type="date" id="data-nascita" autocomplete="bday" aria-label="Data di nascita" class="input-line text-xs w-36 sm:w-32">
+                <div
+                    class="flex items-center gap-1.5 w-full flex-wrap sm:flex-nowrap">
+                    <label for="luogo-nascita"
+                        class="text-xs font-bold text-gray-700 whitespace-nowrap">nato/a
+                        a</label>
+                    <input type="text" id="luogo-nascita"
+                        placeholder="Comune di nascita"
+                        autocomplete="address-level2"
+                        class="input-line text-xs flex-1 min-w-[110px]">
+                    <span class="text-xs font-bold text-gray-500"
+                        aria-hidden="true">(</span>
+                    <input type="text" id="prov-nascita" placeholder="PR"
+                        maxlength="2" autocomplete="address-level1"
+                        aria-label="Provincia di nascita"
+                        class="input-line text-xs uppercase text-center w-10 px-0">
+                    <span class="text-xs font-bold text-gray-500"
+                        aria-hidden="true">)</span>
+                    <label for="data-nascita"
+                        class="text-xs font-bold text-gray-700 whitespace-nowrap ml-1">il</label>
+                    <input type="date" id="data-nascita" autocomplete="bday"
+                        aria-label="Data di nascita"
+                        class="input-line text-xs w-36 sm:w-32">
                 </div>
 
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+                <div
+                    class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
                     <div class="flex items-center gap-2 flex-1 w-full">
-                        <label for="residenza" class="text-xs font-bold text-gray-700 whitespace-nowrap">residente a</label>
-                        <input type="text" id="residenza" placeholder="Città di residenza e indirizzo" autocomplete="street-address" class="input-line text-xs">
+                        <label for="residenza"
+                            class="text-xs font-bold text-gray-700 whitespace-nowrap">residente
+                            a</label>
+                        <input type="text" id="residenza"
+                            placeholder="Città di residenza e indirizzo"
+                            autocomplete="street-address"
+                            class="input-line text-xs">
                     </div>
                     <div class="flex items-center gap-2 w-full sm:w-28">
-                        <span class="text-xs font-bold text-gray-500" aria-hidden="true">(</span>
-                        <input type="text" id="prov-residenza" placeholder="PR" maxlength="2" autocomplete="address-level1" aria-label="Provincia di residenza" class="input-line text-xs uppercase text-center">
-                        <span class="text-xs font-bold text-gray-500" aria-hidden="true">)</span>
+                        <span class="text-xs font-bold text-gray-500"
+                            aria-hidden="true">(</span>
+                        <input type="text" id="prov-residenza" placeholder="PR"
+                            maxlength="2" autocomplete="address-level1"
+                            aria-label="Provincia di residenza"
+                            class="input-line text-xs uppercase text-center">
+                        <span class="text-xs font-bold text-gray-500"
+                            aria-hidden="true">)</span>
                     </div>
                 </div>
             </section>
 
             <!-- ───────── DATI SANITARI + FIRME ───────── -->
-            <section class="grid grid-cols-1 md:grid-cols-12 gap-5 mb-6" aria-labelledby="h-dati-sanitari">
-                <h2 id="h-dati-sanitari" class="sr-only">Dati sanitari e firme</h2>
+            <section class="grid grid-cols-1 md:grid-cols-12 gap-5 mb-6"
+                aria-labelledby="h-dati-sanitari">
+                <h2 id="h-dati-sanitari" class="sr-only">Dati sanitari e firme
+                </h2>
 
                 <div class="md:col-span-7 space-y-3">
-                    <div class="flex items-center gap-2 sm:gap-2.5 flex-nowrap w-full">
-                        <span class="text-[10px] sm:text-xs font-bold text-avis-blue uppercase whitespace-nowrap leading-none flex-shrink-0">
+                    <div
+                        class="flex items-center gap-2 sm:gap-2.5 flex-nowrap w-full">
+                        <span
+                            class="text-[10px] sm:text-xs font-bold text-avis-blue uppercase whitespace-nowrap leading-none flex-shrink-0">
                             <span class="sm:hidden">Gruppo</span>
-                            <span class="hidden sm:inline">Gruppo Sanguigno</span>
+                            <span class="hidden sm:inline">Gruppo
+                                Sanguigno</span>
                         </span>
 
                         <div class="red-box h-10 flex-1 min-w-[95px]">
                             <select id="gruppo-sanguigno"
-                                    class="font-black text-sm sm:text-base text-avis-red"
-                                    aria-label="Gruppo sanguigno"
-                                    title="Gruppo sanguigno (A / B / AB / 0)">
+                                class="font-black text-sm sm:text-base text-avis-red"
+                                aria-label="Gruppo sanguigno"
+                                title="Gruppo sanguigno (A / B / AB / 0)">
                                 <option value="">-</option>
                                 <option value="A">A</option>
                                 <option value="B">B</option>
@@ -554,13 +811,14 @@
                             </select>
                         </div>
 
-                        <span class="text-[10px] sm:text-xs font-bold text-avis-red uppercase whitespace-nowrap leading-none flex-shrink-0">Rh</span>
+                        <span
+                            class="text-[10px] sm:text-xs font-bold text-avis-red uppercase whitespace-nowrap leading-none flex-shrink-0">Rh</span>
 
                         <div class="red-box h-10 flex-1 min-w-[85px]">
                             <select id="rh"
-                                    class="font-black text-sm sm:text-base text-avis-red"
-                                    aria-label="Fattore Rh"
-                                    title="Fattore Rh (POS / NEG)">
+                                class="font-black text-sm sm:text-base text-avis-red"
+                                aria-label="Fattore Rh"
+                                title="Fattore Rh (POS / NEG)">
                                 <option value="">-</option>
                                 <option value="Positivo (+)">POS (+)</option>
                                 <option value="Negativo (-)">NEG (-)</option>
@@ -569,77 +827,116 @@
                     </div>
 
                     <div class="flex items-center gap-2">
-                        <label for="fenotipo" class="text-xs font-bold text-gray-700 w-20 sm:w-24 flex-shrink-0">Fenotipo</label>
+                        <label for="fenotipo"
+                            class="text-xs font-bold text-gray-700 w-20 sm:w-24 flex-shrink-0">Fenotipo</label>
                         <div class="red-box h-9 flex-1">
-                            <input type="text" id="fenotipo" placeholder="e.g. CcDee" spellcheck="false" class="text-xs font-semibold">
+                            <input type="text" id="fenotipo"
+                                placeholder="e.g. CcDee" spellcheck="false"
+                                class="text-xs font-semibold">
                         </div>
                     </div>
 
                     <div class="flex items-center gap-2">
-                        <label for="anticorpi-1" class="text-xs font-bold text-gray-700 w-20 sm:w-24 flex-shrink-0">(1)</label>
+                        <label for="anticorpi-1"
+                            class="text-xs font-bold text-gray-700 w-20 sm:w-24 flex-shrink-0">(1)</label>
                         <div class="red-box h-9 flex-1">
-                            <input type="text" id="anticorpi-1" placeholder="Indicazioni (1)" class="text-xs font-semibold">
+                            <input type="text" id="anticorpi-1"
+                                placeholder="Indicazioni (1)"
+                                class="text-xs font-semibold">
                         </div>
                     </div>
 
                     <div class="flex items-center gap-2 pt-1">
-                        <div class="text-[10px] font-semibold text-gray-600 leading-tight flex-1">
+                        <div
+                            class="text-[10px] font-semibold text-gray-600 leading-tight flex-1">
                             Per controllo esatta trascrizione emogruppo
-                            <i class="fa-solid fa-arrow-right text-avis-red ml-1" aria-hidden="true"></i>
+                            <i class="fa-solid fa-arrow-right text-avis-red ml-1"
+                                aria-hidden="true"></i>
                         </div>
                         <div class="red-box h-9 w-24 sm:w-28">
-                            <input type="text" id="emogruppo-check" placeholder="OK" aria-label="Verifica trascrizione emogruppo" class="text-xs font-bold text-center">
+                            <input type="text" id="emogruppo-check"
+                                placeholder="OK"
+                                aria-label="Verifica trascrizione emogruppo"
+                                class="text-xs font-bold text-center">
                         </div>
                     </div>
 
-                    <div class="text-[9px] text-gray-500 italic">(1) (Anticorpi - Altre indicazioni)</div>
+                    <div class="text-[9px] text-gray-500 italic">(1) (Anticorpi
+                        - Altre indicazioni)</div>
                 </div>
 
-                <div class="md:col-span-5 flex flex-col justify-between space-y-4 pt-1">
+                <div
+                    class="md:col-span-5 flex flex-col justify-between space-y-4 pt-1">
                     <div class="space-y-4">
                         <div>
-                            <div class="flex justify-between items-center text-xs font-bold text-gray-700 mb-1">
-                                <label for="firma-direttore">Il Direttore Sanitario</label>
-                                <span class="text-[10px] font-normal text-gray-500 no-print">Firma digitale o autografa</span>
+                            <div
+                                class="flex justify-between items-center text-xs font-bold text-gray-700 mb-1">
+                                <label for="firma-direttore">Il Direttore
+                                    Sanitario</label>
+                                <span
+                                    class="text-[10px] font-normal text-gray-500 no-print">Firma
+                                    digitale o autografa</span>
                             </div>
-                            <input type="text" id="firma-direttore" placeholder="Dr. / Dott.ssa ..." autocomplete="off" class="input-line text-xs italic font-serif text-center">
+                            <input type="text" id="firma-direttore"
+                                placeholder="Dr. / Dott.ssa ..."
+                                autocomplete="off"
+                                class="input-line text-xs italic font-serif text-center">
                         </div>
                     </div>
 
-                    <div class="p-2 bg-red-50 rounded border border-red-100 text-center">
-                        <div class="text-[10px] font-bold text-avis-red uppercase">Tessera strettamente personale</div>
-                        <div class="text-[9px] text-gray-600">Presentare ad ogni donazione presso la sede AVIS</div>
+                    <div
+                        class="p-2 bg-red-50 rounded border border-red-100 text-center">
+                        <div
+                            class="text-[10px] font-bold text-avis-red uppercase">
+                            Tessera strettamente personale</div>
+                        <div class="text-[9px] text-gray-600">Presentare ad ogni
+                            donazione presso la sede AVIS</div>
                     </div>
                 </div>
             </section>
 
             <!-- ───────── STORICO DONAZIONI ───────── -->
-            <section class="mt-6 border-t-2 border-gray-800 pt-4" aria-labelledby="h-donazioni">
-                <div class="flex items-center justify-between mb-3 gap-2 flex-wrap">
-                    <h2 id="h-donazioni" class="font-extrabold text-gray-800 text-sm tracking-wider uppercase flex items-center gap-2">
-                        <i class="fa-solid fa-square-plus text-avis-red" aria-hidden="true"></i>
+            <section class="mt-6 border-t-2 border-gray-800 pt-4"
+                aria-labelledby="h-donazioni">
+                <div
+                    class="flex items-center justify-between mb-3 gap-2 flex-wrap">
+                    <h2 id="h-donazioni"
+                        class="font-extrabold text-gray-800 text-sm tracking-wider uppercase flex items-center gap-2">
+                        <i class="fa-solid fa-square-plus text-avis-red"
+                            aria-hidden="true"></i>
                         Donazioni Compiute
                     </h2>
-                    <button type="button" id="btn-add-row" class="no-print btn btn-primary !min-h-[36px] !py-1 !px-3 !text-xs">
-                        <i class="fa-solid fa-plus" aria-hidden="true"></i> Aggiungi Donazione
+                    <button type="button" id="btn-add-row"
+                        class="no-print btn btn-primary !min-h-[36px] !py-1 !px-3 !text-xs">
+                        <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                        Aggiungi Donazione
                     </button>
                 </div>
 
                 <div class="overflow-x-auto">
                     <table id="donations-table" aria-label="Storico donazioni">
                         <thead>
-                            <tr class="bg-gray-100 text-gray-800 text-xs font-bold border border-gray-800">
-                                <th scope="col" class="p-2 border-r border-gray-800 text-center w-28">DATA</th>
-                                <th scope="col" class="p-2 border-r border-gray-800 text-center" colspan="3">
+                            <tr
+                                class="bg-gray-100 text-gray-800 text-xs font-bold border border-gray-800">
+                                <th scope="col"
+                                    class="p-2 border-r border-gray-800 text-center w-28">
+                                    DATA</th>
+                                <th scope="col"
+                                    class="p-2 border-r border-gray-800 text-center"
+                                    colspan="3">
                                     Tipo Donazione
-                                    <div class="grid grid-cols-3 text-[10px] font-bold mt-1 border-t border-gray-400 pt-0.5 gap-1">
+                                    <div
+                                        class="grid grid-cols-3 text-[10px] font-bold mt-1 border-t border-gray-400 pt-0.5 gap-1">
                                         <span>SANGUE</span>
                                         <span>PLASMA</span>
                                         <span>CITO</span>
                                     </div>
                                 </th>
-                                <th scope="col" class="p-2 border-r border-gray-800 text-center">Firma del Medico</th>
-                                <th scope="col" class="p-1 text-center w-12 no-print">
+                                <th scope="col"
+                                    class="p-2 border-r border-gray-800 text-center">
+                                    Firma del Medico</th>
+                                <th scope="col"
+                                    class="p-1 text-center w-12 no-print">
                                     <span class="sr-only">Azioni</span>
                                 </th>
                             </tr>
@@ -649,8 +946,9 @@
                 </div>
             </section>
 
-            <!-- ───────── FOOTER ───────── -->
-            <footer class="mt-8 pt-4 border-t border-gray-200 text-center text-[10px] text-gray-500 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <!-- ───────── FOOTER INTERNO TESSERA ───────── -->
+            <footer
+                class="mt-8 pt-4 border-t border-gray-200 text-center text-[10px] text-gray-500 flex flex-col sm:flex-row justify-between items-center gap-2">
                 <div>AVIS Comunale Tradate • Ospedale Galmarini</div>
                 <div>Sistema Informativo Volontari Donatori</div>
                 <div class="font-mono">Doc. Ref. Mod-AVIS-TRAD-2026</div>
@@ -658,96 +956,154 @@
         </article>
 
         <!-- ═══════════════════ RISORSE E APPROFONDIMENTI (solo schermo) ═══════════════════ -->
-        <section class="no-print w-full max-w-3xl mt-6 mb-8" aria-labelledby="h-risorse">
-            <div class="flex items-center justify-between mb-3 px-1">
-                <h2 id="h-risorse" class="font-extrabold text-gray-700 text-sm tracking-wider uppercase flex items-center gap-2">
-                    <i class="fa-solid fa-link text-avis-red" aria-hidden="true"></i>
-                    Risorse e Approfondimenti
+        <section class="no-print w-full max-w-3xl mt-6 mb-6"
+            aria-labelledby="h-risorse">
+            <div class="flex items-center justify-between mb-1 px-1">
+                <h2 id="h-risorse"
+                    class="font-extrabold text-gray-700 text-sm tracking-wider uppercase flex items-center gap-2">
+                    <i class="fa-solid fa-link text-avis-red"
+                        aria-hidden="true"></i>
+                    Risorse esterne
                 </h2>
-                <a href="https://www.avistradate.it" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   class="text-[10px] text-gray-400 font-semibold hover:text-avis-blue hover:underline transition-colors">
-                   avistradate.it
+                <a href="https://www.avistradate.it" target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-[10px] text-gray-400 font-semibold hover:text-avis-blue hover:underline transition-colors">
+                    avistradate.it
                 </a>
             </div>
+            <p class="text-[10px] text-gray-400 italic mb-3 px-1">
+                Link a sito esterno, non affiliati al progetto. Inseriti solo
+                come riferimento dimostrativo.
+            </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
 
                 <!-- 1. Centro Trasfusionale -->
-                <a href="https://www.avistradate.it/centro-trasfusionale/" target="_blank" rel="noopener noreferrer" class="resource-card">
+                <a href="https://www.avistradate.it/centro-trasfusionale/"
+                    target="_blank" rel="noopener noreferrer"
+                    class="resource-card">
                     <div class="resource-icon bg-blue-100 text-avis-blue">
                         <i class="fa-solid fa-hospital" aria-hidden="true"></i>
                     </div>
                     <div class="min-w-0">
-                        <div class="font-bold text-sm text-gray-800 leading-tight">Centro Trasfusionale</div>
-                        <p class="text-[11px] text-gray-500 leading-snug mt-0.5">Informazioni utili sul centro trasfusionale di Tradate e sulle modalità di accesso.</p>
+                        <div
+                            class="font-bold text-sm text-gray-800 leading-tight">
+                            Centro Trasfusionale</div>
+                        <p
+                            class="text-[11px] text-gray-500 leading-snug mt-0.5">
+                            Informazioni utili sul centro trasfusionale di
+                            Tradate e sulle modalità di accesso.</p>
                     </div>
                 </a>
 
                 <!-- 2. Requisiti per iscriversi -->
-                <a href="https://www.avistradate.it/requisiti-per-iscriversi/" target="_blank" rel="noopener noreferrer" class="resource-card">
+                <a href="https://www.avistradate.it/requisiti-per-iscriversi/"
+                    target="_blank" rel="noopener noreferrer"
+                    class="resource-card">
                     <div class="resource-icon bg-green-100 text-green-700">
-                        <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+                        <i class="fa-solid fa-clipboard-check"
+                            aria-hidden="true"></i>
                     </div>
                     <div class="min-w-0">
-                        <div class="font-bold text-sm text-gray-800 leading-tight">Requisiti per Iscriversi</div>
-                        <p class="text-[11px] text-gray-500 leading-snug mt-0.5">Età, peso, stato di salute e tutto ciò che serve per diventare donatore.</p>
+                        <div
+                            class="font-bold text-sm text-gray-800 leading-tight">
+                            Requisiti per Iscriversi</div>
+                        <p
+                            class="text-[11px] text-gray-500 leading-snug mt-0.5">
+                            Età, peso, stato di salute e tutto ciò che serve per
+                            diventare donatore.</p>
                     </div>
                 </a>
 
                 <!-- 3. Tipi di donazione -->
-                <a href="https://www.avistradate.it/tipi-di-donazione/" target="_blank" rel="noopener noreferrer" class="resource-card">
+                <a href="https://www.avistradate.it/tipi-di-donazione/"
+                    target="_blank" rel="noopener noreferrer"
+                    class="resource-card">
                     <div class="resource-icon bg-red-100 text-avis-red">
                         <i class="fa-solid fa-droplet" aria-hidden="true"></i>
                     </div>
                     <div class="min-w-0">
-                        <div class="font-bold text-sm text-gray-800 leading-tight">Tipi di Donazione</div>
-                        <p class="text-[11px] text-gray-500 leading-snug mt-0.5">Sangue intero, plasma, piastrine e donazione multipla: differenze e frequenze.</p>
+                        <div
+                            class="font-bold text-sm text-gray-800 leading-tight">
+                            Tipi di Donazione</div>
+                        <p
+                            class="text-[11px] text-gray-500 leading-snug mt-0.5">
+                            Sangue intero, plasma, piastrine e donazione
+                            multipla: differenze e frequenze.</p>
                     </div>
                 </a>
 
                 <!-- 4. Vantaggi per il donatore -->
-                <a href="https://www.avistradate.it/vantaggi-per-donatore-sangue/" target="_blank" rel="noopener noreferrer" class="resource-card">
+                <a href="https://www.avistradate.it/vantaggi-per-donatore-sangue/"
+                    target="_blank" rel="noopener noreferrer"
+                    class="resource-card">
                     <div class="resource-icon bg-amber-100 text-amber-700">
-                        <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                        <i class="fa-solid fa-heart-pulse"
+                            aria-hidden="true"></i>
                     </div>
                     <div class="min-w-0">
-                        <div class="font-bold text-sm text-gray-800 leading-tight">Vantaggi per il Donatore</div>
-                        <p class="text-[11px] text-gray-500 leading-snug mt-0.5">Benefici per la salute, permessi lavorativi e copertura assicurativa.</p>
+                        <div
+                            class="font-bold text-sm text-gray-800 leading-tight">
+                            Vantaggi per il Donatore</div>
+                        <p
+                            class="text-[11px] text-gray-500 leading-snug mt-0.5">
+                            Benefici per la salute, permessi lavorativi e
+                            copertura assicurativa.</p>
                     </div>
                 </a>
 
                 <!-- 5. Prima e dopo la donazione -->
-                <a href="https://www.avistradate.it/prima-dopo-donazione-sangue/" target="_blank" rel="noopener noreferrer" class="resource-card">
+                <a href="https://www.avistradate.it/prima-dopo-donazione-sangue/"
+                    target="_blank" rel="noopener noreferrer"
+                    class="resource-card">
                     <div class="resource-icon bg-teal-100 text-teal-700">
-                        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                        <i class="fa-solid fa-circle-info"
+                            aria-hidden="true"></i>
                     </div>
                     <div class="min-w-0">
-                        <div class="font-bold text-sm text-gray-800 leading-tight">Prima e Dopo la Donazione</div>
-                        <p class="text-[11px] text-gray-500 leading-snug mt-0.5">Consigli pratici su cosa mangiare, cosa portare e come comportarsi dopo il prelievo.</p>
+                        <div
+                            class="font-bold text-sm text-gray-800 leading-tight">
+                            Prima e Dopo la Donazione</div>
+                        <p
+                            class="text-[11px] text-gray-500 leading-snug mt-0.5">
+                            Consigli pratici su cosa mangiare, cosa portare e
+                            come comportarsi dopo il prelievo.</p>
                     </div>
                 </a>
 
                 <!-- 6. Sospensione e viaggi -->
-                <a href="https://www.avistradate.it/sospensione-e-viaggi/" target="_blank" rel="noopener noreferrer" class="resource-card">
+                <a href="https://www.avistradate.it/sospensione-e-viaggi/"
+                    target="_blank" rel="noopener noreferrer"
+                    class="resource-card">
                     <div class="resource-icon bg-purple-100 text-purple-700">
                         <i class="fa-solid fa-plane" aria-hidden="true"></i>
                     </div>
                     <div class="min-w-0">
-                        <div class="font-bold text-sm text-gray-800 leading-tight">Sospensione e Viaggi</div>
-                        <p class="text-[11px] text-gray-500 leading-snug mt-0.5">Quando aspettare a donare dopo un viaggio, un intervento o una terapia.</p>
+                        <div
+                            class="font-bold text-sm text-gray-800 leading-tight">
+                            Sospensione e Viaggi</div>
+                        <p
+                            class="text-[11px] text-gray-500 leading-snug mt-0.5">
+                            Quando aspettare a donare dopo un viaggio, un
+                            intervento o una terapia.</p>
                     </div>
                 </a>
 
                 <!-- 7. Contatti -->
-                <a href="https://www.avistradate.it/contatti/" target="_blank" rel="noopener noreferrer" class="resource-card sm:col-span-2">
+                <a href="https://www.avistradate.it/contatti/" target="_blank"
+                    rel="noopener noreferrer"
+                    class="resource-card sm:col-span-2">
                     <div class="resource-icon bg-gray-200 text-gray-700">
                         <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                     </div>
                     <div class="min-w-0">
-                        <div class="font-bold text-sm text-gray-800 leading-tight">Contatti</div>
-                        <p class="text-[11px] text-gray-500 leading-snug mt-0.5">Telefono, email, orari di apertura e come raggiungere la sede AVIS di Tradate.</p>
+                        <div
+                            class="font-bold text-sm text-gray-800 leading-tight">
+                            Contatti</div>
+                        <p
+                            class="text-[11px] text-gray-500 leading-snug mt-0.5">
+                            Telefono, email, orari di apertura e come
+                            raggiungere la sede AVIS di Tradate.</p>
                     </div>
                 </a>
 
@@ -755,168 +1111,262 @@
         </section>
     </main>
 
+    <!-- ═══════════════════ FOOTER — DISCLAIMER + PRIVACY ═══════════════════ -->
+    <footer class="no-print w-full max-w-3xl px-1 mb-8 text-gray-500">
+
+        <!-- Disclaimer ben visibile -->
+        <div class="disclaimer-box p-3 sm:p-4 mb-3">
+            <p class="text-[11px] sm:text-xs leading-relaxed text-gray-700">
+                <i class="fa-solid fa-triangle-exclamation text-amber-600 mr-1"
+                    aria-hidden="true"></i>
+                <strong class="font-bold text-gray-800">Progetto
+                    dimostrativo</strong>
+                realizzato a scopo di portfolio. Non è un sito ufficiale AVIS e
+                non è affiliato
+                all'Associazione. I dati inseriti restano nel browser
+                dell'utente.
+            </p>
+        </div>
+
+        <!-- Mini informativa privacy/cookie -->
+        <details class="bg-gray-50 border border-gray-200 rounded-lg">
+            <summary
+                class="cursor-pointer p-2.5 text-xs font-semibold text-gray-600 hover:text-gray-900 select-none">
+                <i class="fa-solid fa-shield-halved text-avis-blue mr-1"
+                    aria-hidden="true"></i>
+                Informativa privacy e cookie (sintetica)
+            </summary>
+            <div
+                class="p-3 text-[11px] text-gray-500 leading-relaxed space-y-2 border-t border-gray-200">
+                <p>
+                    <strong class="text-gray-700">Titolare.</strong>
+                    Questo è un <em>concept dimostrativo</em>: non esiste un
+                    titolare del
+                    trattamento che raccolga i dati inseriti, perché nessun dato
+                    viene
+                    trasmesso a un server.
+                </p>
+                <p>
+                    <strong class="text-gray-700">Dati trattati.</strong>
+                    I dati che inserisci (inclusi quelli sanitari come gruppo
+                    sanguigno,
+                    fenotipo e anticorpi) e l'eventuale foto vengono salvati
+                    <strong>esclusivamente nel <code
+                            class="font-mono">localStorage</code> del
+                        tuo browser</strong>. Non vengono inviati, condivisi né
+                    conservati da
+                    terze parti. Puoi cancellarli in qualsiasi momento con il
+                    pulsante
+                    "Resetta" o svuotando i dati del sito dal browser.
+                </p>
+                <p>
+                    <strong class="text-gray-700">Cookie.</strong>
+                    Il progetto <strong>non usa cookie</strong> di profilazione
+                    né strumenti
+                    di analytics.
+                </p>
+                <p>
+                    <strong class="text-gray-700">Risorse di terze
+                        parti.</strong>
+                    La pagina carica font (Google Fonts), icone (Font Awesome
+                    via Cloudflare)
+                    e Tailwind CSS da CDN esterne. Questi fornitori ricevono
+                    l'indirizzo IP
+                    del browser per erogare la risorsa, secondo le rispettive
+                    informative.
+                </p>
+                <p>
+                    <strong class="text-gray-700">Diritti.</strong>
+                    Non essendo un servizio reale, non vi è alcun trattamento da
+                    parte di un
+                    titolare. Per rimuovere i dati locali usa il pulsante
+                    "Resetta" o la
+                    funzione "Cancella dati siti" del browser.
+                </p>
+            </div>
+        </details>
+
+        <p class="text-center text-[10px] text-gray-400 mt-3">
+            AVIS Card – Concept UI · demo non ufficiale · nessun dato reale
+        </p>
+    </footer>
+
     <!-- ═══════════════════ TOAST ═══════════════════ -->
     <div id="save-toast" role="status" aria-live="polite" aria-atomic="true"
-         class="no-print fixed bottom-4 right-4 left-4 sm:left-auto bg-green-600 text-white px-4 py-2.5 rounded-lg shadow-lg text-sm font-semibold flex items-center gap-2 opacity-0 pointer-events-none z-50 sm:min-w-[200px]">
-        <i class="fa-solid fa-check-circle" id="save-toast-icon" aria-hidden="true"></i>
+        class="no-print fixed bottom-4 right-4 left-4 sm:left-auto bg-green-600 text-white px-4 py-2.5 rounded-lg shadow-lg text-sm font-semibold flex items-center gap-2 opacity-0 pointer-events-none z-50 sm:min-w-[200px]">
+        <i class="fa-solid fa-check-circle" id="save-toast-icon"
+            aria-hidden="true"></i>
         <span id="save-toast-text">Salvato</span>
     </div>
 
     <!-- ═══════════════════ JAVASCRIPT ═══════════════════ -->
     <script>
-    'use strict';
+        'use strict';
 
-    (function () {
-        const STORAGE_KEY = 'avis_tessera_tradate_v1';
-        const FIELD_IDS = [
-            'comunale-di', 'tessera-n', 'rilasciata-il', 'nome-cognome',
-            'luogo-nascita', 'prov-nascita', 'data-nascita', 'residenza',
-            'prov-residenza', 'gruppo-sanguigno', 'rh', 'fenotipo',
-            'anticorpi-1', 'emogruppo-check', 'firma-direttore'
-        ];
-        const SAVE_DEBOUNCE_MS = 400;
-        const INITIAL_EMPTY_ROWS = 4;
-        const PHOTO_MAX_W = 200;
-        const PHOTO_MAX_H = 250;
-        const PHOTO_QUALITY = 0.8;
+        (function () {
+            const STORAGE_KEY = 'avis_tessera_tradate_concept_v1';
+            const FIELD_IDS = [
+                'comunale-di', 'tessera-n', 'rilasciata-il', 'nome-cognome',
+                'luogo-nascita', 'prov-nascita', 'data-nascita', 'residenza',
+                'prov-residenza', 'gruppo-sanguigno', 'rh', 'fenotipo',
+                'anticorpi-1', 'emogruppo-check', 'firma-direttore'
+            ];
+            const SAVE_DEBOUNCE_MS = 400;
+            const INITIAL_EMPTY_ROWS = 4;
+            const PHOTO_MAX_W = 200;
+            const PHOTO_MAX_H = 250;
+            const PHOTO_QUALITY = 0.8;
 
-        let rowIdCounter = 0;
-        let isLoading = false;
-        let saveTimer = null;
+            let rowIdCounter = 0;
+            let isLoading = false;
+            let saveTimer = null;
 
-        const $ = (id) => document.getElementById(id);
-        const els = {
-            tbody: $('donations-tbody'),
-            toast: $('save-toast'),
-            toastText: $('save-toast-text'),
-            toastIcon: $('save-toast-icon'),
-            photoInput: $('photo-input'),
-            photoPreview: $('photo-preview'),
-            photoPlaceholder: $('photo-placeholder'),
-            card: document.querySelector('.tessera-card')
-        };
+            const $ = (id) => document.getElementById(id);
+            const els = {
+                tbody: $('donations-tbody'),
+                toast: $('save-toast'),
+                toastText: $('save-toast-text'),
+                toastIcon: $('save-toast-icon'),
+                photoInput: $('photo-input'),
+                photoPreview: $('photo-preview'),
+                photoPlaceholder: $('photo-placeholder'),
+                card: document.querySelector('.tessera-card')
+            };
 
-        function saveState(showFeedback = true) {
-            const campi = {};
-            FIELD_IDS.forEach(id => {
-                const el = $(id);
-                if (el) campi[id] = el.value;
-            });
-
-            const donazioni = [...els.tbody.querySelectorAll('tr')].map(tr => ({
-                data:   tr.querySelector('.donation-date')?.value   || '',
-                tipo:   tr.querySelector('.donation-type:checked')?.value || '',
-                medico: tr.querySelector('.donation-doctor')?.value || ''
-            }));
-
-            const foto = els.photoPreview.src || '';
-
-            try {
-                localStorage.setItem(STORAGE_KEY, JSON.stringify({ campi, donazioni, foto }));
-                if (showFeedback) showToast('Salvato');
-            } catch (err) {
-                console.error('Save failed:', err);
-                const isQuota = err.name === 'QuotaExceededError' || err.code === 22;
-                if (showFeedback) showToast(isQuota ? 'Spazio esaurito' : 'Errore salvataggio', true);
+            /* Escapa valori per l'inserimento sicuro in innerHTML */
+            function escapeHtml(value) {
+                return String(value ?? '').replace(/[&<>"']/g, (c) => ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    '"': '&quot;',
+                    "'": '&#39;'
+                }[c]));
             }
-        }
 
-        function debouncedSave() {
-            if (isLoading) return;
-            clearTimeout(saveTimer);
-            saveTimer = setTimeout(() => saveState(), SAVE_DEBOUNCE_MS);
-        }
+            function saveState(showFeedback = true) {
+                const campi = {};
+                FIELD_IDS.forEach(id => {
+                    const el = $(id);
+                    if (el) campi[id] = el.value;
+                });
 
-        function loadState() {
-            const raw = localStorage.getItem(STORAGE_KEY);
-            if (!raw) return false;
-            isLoading = true;
-            try {
-                const s = JSON.parse(raw);
+                const donazioni = [...els.tbody.querySelectorAll('tr')].map(tr => ({
+                    data: tr.querySelector('.donation-date')?.value || '',
+                    tipo: tr.querySelector('.donation-type:checked')?.value || '',
+                    medico: tr.querySelector('.donation-doctor')?.value || ''
+                }));
 
-                if (s.campi && typeof s.campi === 'object') {
-                    Object.entries(s.campi).forEach(([id, v]) => {
-                        const el = $(id);
-                        if (el) el.value = v;
-                    });
+                /* Legge l'attributo, non la proprietà: evita che src='' risolva
+                   all'URL del documento e finisca salvato come "foto". */
+                const foto = els.photoPreview.getAttribute('src') || '';
+
+                try {
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify({ campi, donazioni, foto }));
+                    if (showFeedback) showToast('Salvato');
+                } catch (err) {
+                    console.error('Save failed:', err);
+                    const isQuota = err.name === 'QuotaExceededError' || err.code === 22;
+                    if (showFeedback) showToast(isQuota ? 'Spazio esaurito' : 'Errore salvataggio', true);
                 }
+            }
 
-                if (s.foto && s.foto.startsWith('data:image/')) {
-                    els.photoPreview.src = s.foto;
+            function debouncedSave() {
+                if (isLoading) return;
+                clearTimeout(saveTimer);
+                saveTimer = setTimeout(() => saveState(), SAVE_DEBOUNCE_MS);
+            }
+
+            function loadState() {
+                const raw = localStorage.getItem(STORAGE_KEY);
+                if (!raw) return false;
+                isLoading = true;
+                try {
+                    const s = JSON.parse(raw);
+
+                    if (s.campi && typeof s.campi === 'object') {
+                        Object.entries(s.campi).forEach(([id, v]) => {
+                            const el = $(id);
+                            if (el) el.value = v;
+                        });
+                    }
+
+                    if (s.foto && s.foto.startsWith('data:image/')) {
+                        els.photoPreview.setAttribute('src', s.foto);
+                        els.photoPreview.classList.remove('hidden');
+                        els.photoPlaceholder.classList.add('hidden');
+                    }
+
+                    els.tbody.innerHTML = '';
+                    if (Array.isArray(s.donazioni) && s.donazioni.length > 0) {
+                        s.donazioni.forEach(d => addDonationRow(d.data, d.tipo, d.medico));
+                    }
+                    return true;
+                } catch (err) {
+                    console.error('Load failed:', err);
+                    return false;
+                } finally {
+                    isLoading = false;
+                }
+            }
+
+            function showToast(msg = 'Salvato', isError = false) {
+                els.toastText.textContent = msg;
+                els.toast.classList.remove('bg-green-600', 'bg-red-600');
+                els.toast.classList.add(isError ? 'bg-red-600' : 'bg-green-600');
+                els.toastIcon.className = isError
+                    ? 'fa-solid fa-circle-exclamation'
+                    : 'fa-solid fa-check-circle';
+                els.toast.classList.add('show');
+                clearTimeout(els.toast._t);
+                els.toast._t = setTimeout(() => els.toast.classList.remove('show'), 1800);
+            }
+
+            function resizeImage(dataURL) {
+                return new Promise(resolve => {
+                    const img = new Image();
+                    img.onload = () => {
+                        let { width, height } = img;
+                        const ratio = Math.min(PHOTO_MAX_W / width, PHOTO_MAX_H / height, 1);
+                        width = Math.round(width * ratio);
+                        height = Math.round(height * ratio);
+                        const canvas = document.createElement('canvas');
+                        canvas.width = width;
+                        canvas.height = height;
+                        canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+                        resolve(canvas.toDataURL('image/jpeg', PHOTO_QUALITY));
+                    };
+                    img.onerror = () => resolve(dataURL);
+                    img.src = dataURL;
+                });
+            }
+
+            async function previewPhoto(event) {
+                const file = event.target.files?.[0];
+                if (!file) return;
+                if (!file.type.startsWith('image/')) {
+                    showToast('File non valido', true);
+                    return;
+                }
+                const reader = new FileReader();
+                reader.onload = async (e) => {
+                    const resized = await resizeImage(e.target.result);
+                    els.photoPreview.setAttribute('src', resized);
                     els.photoPreview.classList.remove('hidden');
                     els.photoPlaceholder.classList.add('hidden');
-                }
-
-                els.tbody.innerHTML = '';
-                if (Array.isArray(s.donazioni) && s.donazioni.length > 0) {
-                    s.donazioni.forEach(d => addDonationRow(d.data, d.tipo, d.medico));
-                }
-                return true;
-            } catch (err) {
-                console.error('Load failed:', err);
-                return false;
-            } finally {
-                isLoading = false;
-            }
-        }
-
-        function showToast(msg = 'Salvato', isError = false) {
-            els.toastText.textContent = msg;
-            els.toast.classList.remove('bg-green-600', 'bg-red-600');
-            els.toast.classList.add(isError ? 'bg-red-600' : 'bg-green-600');
-            els.toastIcon.className = isError
-                ? 'fa-solid fa-circle-exclamation'
-                : 'fa-solid fa-check-circle';
-            els.toast.classList.add('show');
-            clearTimeout(els.toast._t);
-            els.toast._t = setTimeout(() => els.toast.classList.remove('show'), 1800);
-        }
-
-        function resizeImage(dataURL) {
-            return new Promise(resolve => {
-                const img = new Image();
-                img.onload = () => {
-                    let { width, height } = img;
-                    const ratio = Math.min(PHOTO_MAX_W / width, PHOTO_MAX_H / height, 1);
-                    width  = Math.round(width  * ratio);
-                    height = Math.round(height * ratio);
-                    const canvas = document.createElement('canvas');
-                    canvas.width  = width;
-                    canvas.height = height;
-                    canvas.getContext('2d').drawImage(img, 0, 0, width, height);
-                    resolve(canvas.toDataURL('image/jpeg', PHOTO_QUALITY));
+                    saveState(false);
                 };
-                img.onerror = () => resolve(dataURL);
-                img.src = dataURL;
-            });
-        }
-
-        async function previewPhoto(event) {
-            const file = event.target.files?.[0];
-            if (!file) return;
-            if (!file.type.startsWith('image/')) {
-                showToast('File non valido', true);
-                return;
+                reader.readAsDataURL(file);
             }
-            const reader = new FileReader();
-            reader.onload = async (e) => {
-                const resized = await resizeImage(e.target.result);
-                els.photoPreview.src = resized;
-                els.photoPreview.classList.remove('hidden');
-                els.photoPlaceholder.classList.add('hidden');
-                saveState(false);
-            };
-            reader.readAsDataURL(file);
-        }
 
-        function addDonationRow(data = '', type = '', doctor = '') {
-            const groupName = `donation-row-${++rowIdCounter}`;
-            const tr = document.createElement('tr');
-            tr.className = 'border-b border-gray-300 hover:bg-gray-50/80 transition-colors';
+            function addDonationRow(data = '', type = '', doctor = '') {
+                const groupName = `donation-row-${++rowIdCounter}`;
+                const tr = document.createElement('tr');
+                tr.className = 'border-b border-gray-300 hover:bg-gray-50/80 transition-colors';
 
-            tr.innerHTML = `
+                tr.innerHTML = `
                 <td data-label="Data" class="p-1.5 border-r border-gray-800 text-center">
-                    <input type="date" value="${data}" aria-label="Data donazione"
+                    <input type="date" value="${escapeHtml(data)}" aria-label="Data donazione"
                            class="donation-date w-full text-center bg-transparent font-medium outline-none text-xs rounded focus:ring-2 focus:ring-avis-blue/40">
                 </td>
                 <td data-label="Sangue" class="p-1 border-r border-gray-300 text-center">
@@ -938,7 +1388,7 @@
                     </label>
                 </td>
                 <td data-label="Medico" class="p-1.5 border-r border-gray-800">
-                    <input type="text" value="${doctor}" placeholder="Dott. ..." aria-label="Firma del medico"
+                    <input type="text" value="${escapeHtml(doctor)}" placeholder="Dott. ..." aria-label="Firma del medico"
                            class="donation-doctor w-full bg-transparent outline-none font-serif text-center italic text-xs rounded focus:ring-2 focus:ring-avis-blue/40">
                 </td>
                 <td class="p-1 text-center no-print">
@@ -948,103 +1398,111 @@
                     </button>
                 </td>
             `;
-            els.tbody.appendChild(tr);
-            if (!isLoading) debouncedSave();
-        }
-
-        function fillSampleData() {
-            isLoading = true;
-            const sample = {
-                'comunale-di': 'Tradate',
-                'tessera-n': 'TRD-84920',
-                'rilasciata-il': '2022-04-14',
-                'nome-cognome': 'MARIO ROSSI',
-                'luogo-nascita': 'Tradate',
-                'prov-nascita': 'VA',
-                'data-nascita': '1990-06-15',
-                'residenza': 'Via Dante Alighieri, 12',
-                'prov-residenza': 'VA',
-                'gruppo-sanguigno': '0',
-                'rh': 'Positivo (+)',
-                'fenotipo': 'ccDDEe',
-                'anticorpi-1': 'Assenti',
-                'emogruppo-check': 'VERIFICATO',
-                'firma-direttore': 'Dr. Stefano Bianchi'
-            };
-            Object.entries(sample).forEach(([id, v]) => { const el = $(id); if (el) el.value = v; });
-
-            els.tbody.innerHTML = '';
-            addDonationRow('2023-01-10', 'SANGUE', 'Dr. S. Bianchi');
-            addDonationRow('2023-05-18', 'PLASMA', 'Dott.ssa M. Conti');
-            addDonationRow('2023-10-22', 'SANGUE', 'Dr. S. Bianchi');
-            addDonationRow('2024-02-14', 'PLASMA', 'Dott. R. Verdi');
-            isLoading = false;
-
-            saveState();
-        }
-
-        function clearForm() {
-            const ok = confirm('Vuoi cancellare tutti i dati del modulo E quelli salvati nel browser?\n\nQuesta operazione non può essere annullata.');
-            if (!ok) return;
-
-            isLoading = true;
-            localStorage.removeItem(STORAGE_KEY);
-
-            FIELD_IDS.forEach(id => {
-                const el = $(id);
-                if (el) el.value = id === 'comunale-di' ? 'Tradate' : '';
-            });
-
-            els.photoPreview.src = '';
-            els.photoPreview.classList.add('hidden');
-            els.photoPlaceholder.classList.remove('hidden');
-            els.photoInput.value = '';
-
-            els.tbody.innerHTML = '';
-            for (let i = 0; i < INITIAL_EMPTY_ROWS; i++) addDonationRow();
-            isLoading = false;
-
-            showToast('Dati cancellati', true);
-        }
-
-        function init() {
-            const restored = loadState();
-            if (!restored) {
-                for (let i = 0; i < INITIAL_EMPTY_ROWS; i++) addDonationRow();
+                els.tbody.appendChild(tr);
+                if (!isLoading) debouncedSave();
             }
 
-            els.card.addEventListener('input', debouncedSave);
-            els.card.addEventListener('change', (e) => {
-                if (e.target.id === 'photo-input') return;
-                debouncedSave();
-            });
+            function fillSampleData() {
+                isLoading = true;
+                const sample = {
+                    'comunale-di': 'Tradate',
+                    'tessera-n': 'TRD-84920',
+                    'rilasciata-il': '2022-04-14',
+                    'nome-cognome': 'MARIO ROSSI',
+                    'luogo-nascita': 'Tradate',
+                    'prov-nascita': 'VA',
+                    'data-nascita': '1990-06-15',
+                    'residenza': 'Via Dante Alighieri, 12',
+                    'prov-residenza': 'VA',
+                    'gruppo-sanguigno': '0',
+                    'rh': 'Positivo (+)',
+                    'fenotipo': 'ccDDEe',
+                    'anticorpi-1': 'Assenti',
+                    'emogruppo-check': 'VERIFICATO',
+                    'firma-direttore': 'Dr. Stefano Bianchi'
+                };
+                Object.entries(sample).forEach(([id, v]) => { const el = $(id); if (el) el.value = v; });
 
-            $('btn-sample').addEventListener('click', fillSampleData);
-            $('btn-clear').addEventListener('click', clearForm);
-            $('btn-print').addEventListener('click', () => window.print());
-            $('btn-add-row').addEventListener('click', () => addDonationRow());
+                els.tbody.innerHTML = '';
+                addDonationRow('2023-01-10', 'SANGUE', 'Dr. S. Bianchi');
+                addDonationRow('2023-05-18', 'PLASMA', 'Dott.ssa M. Conti');
+                addDonationRow('2023-10-22', 'SANGUE', 'Dr. S. Bianchi');
+                addDonationRow('2024-02-14', 'PLASMA', 'Dott. R. Verdi');
+                isLoading = false;
 
-            els.tbody.addEventListener('click', (e) => {
-                const btn = e.target.closest('[data-action="remove-row"]');
-                if (!btn) return;
-                btn.closest('tr').remove();
-                debouncedSave();
-            });
+                saveState();
+            }
 
-            window.addEventListener('beforeunload', () => {
-                if (saveTimer) {
-                    clearTimeout(saveTimer);
-                    saveState(false);
+            function clearForm() {
+                const ok = confirm('Vuoi cancellare tutti i dati del modulo E quelli salvati nel browser?\n\nQuesta operazione non può essere annullata.');
+                if (!ok) return;
+
+                /* Annulla un eventuale salvataggio in coda prima di azzerare */
+                clearTimeout(saveTimer);
+                saveTimer = null;
+
+                isLoading = true;
+                localStorage.removeItem(STORAGE_KEY);
+
+                FIELD_IDS.forEach(id => {
+                    const el = $(id);
+                    if (el) el.value = id === 'comunale-di' ? 'Tradate' : '';
+                });
+
+                els.photoPreview.removeAttribute('src');
+                els.photoPreview.classList.add('hidden');
+                els.photoPlaceholder.classList.remove('hidden');
+                els.photoInput.value = '';
+
+                els.tbody.innerHTML = '';
+                for (let i = 0; i < INITIAL_EMPTY_ROWS; i++) addDonationRow();
+                isLoading = false;
+
+                showToast('Dati cancellati');
+            }
+
+            function init() {
+                const restored = loadState();
+                if (!restored) {
+                    for (let i = 0; i < INITIAL_EMPTY_ROWS; i++) addDonationRow();
                 }
-            });
-        }
 
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', init);
-        } else {
-            init();
-        }
-    })();
+                els.card.addEventListener('input', debouncedSave);
+                els.card.addEventListener('change', (e) => {
+                    if (e.target.id === 'photo-input') return;
+                    debouncedSave();
+                });
+
+                /* Fix: previewPhoto non è globale, quindi va collegato qui */
+                els.photoInput.addEventListener('change', previewPhoto);
+
+                $('btn-sample').addEventListener('click', fillSampleData);
+                $('btn-clear').addEventListener('click', clearForm);
+                $('btn-print').addEventListener('click', () => window.print());
+                $('btn-add-row').addEventListener('click', () => addDonationRow());
+
+                els.tbody.addEventListener('click', (e) => {
+                    const btn = e.target.closest('[data-action="remove-row"]');
+                    if (!btn) return;
+                    btn.closest('tr').remove();
+                    debouncedSave();
+                });
+
+                window.addEventListener('beforeunload', () => {
+                    if (saveTimer) {
+                        clearTimeout(saveTimer);
+                        saveState(false);
+                    }
+                });
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();
     </script>
 </body>
+
 </html>
